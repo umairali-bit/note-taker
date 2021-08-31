@@ -1,0 +1,11 @@
+[
+    {
+        "title":"Test Title",
+        "text":"Test text"
+    }
+]
+
+// add an id
+// each note should shave titel, text and id's
+// npm package to create ID's
+// 
