@@ -28,6 +28,9 @@ app.delete("/notes/:id", (req,res) => {
 
 
 //set up HTMLroutes here
+app.get('/', (req, res) => {
+  return res.sendFile(path.join(__dirname, './public/index.html'));
+})
 
 app.get('/notes', (req, res) => {
   return res.sendFile(path.join(__dirname, './public/notes.html'));
