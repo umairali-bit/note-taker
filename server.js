@@ -1,33 +1,20 @@
-const express = require("express");
-const path = require('path');
+const PORT = process.env.PORT || 3001;
+const express = require('express');
 const app = express();
-const PORT = 3001;
-var uniqid = require('uniqid'); 
-
-app.use(express.static("public")) 
+const apiRoute = require('./routes/apiRoute');
+const htmlRoute = require('./routes/htmlRoute');
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// functions
+
+app.use('/api', apiRoute);
+app.use('/', htmlRoute);
+app.use(express.static('public'));
 
 
-//api route
 
-app.delete("/notes/:id", (req,res) => {
-  //look up req.params.id
-})
-
-
-//set up HTMLroutes here
-app.get('/', (req, res) => {
-  return res.sendFile(path.join(__dirname, './public/index.html'));
-})
-
-app.get('/notes', (req, res) => {
-  return res.sendFile(path.join(__dirname, './public/notes.html'));
-})
 
 app.listen(PORT, () => {
-    console.log(`App listening on PORT ${PORT}`);
-  });
+    console.log(`API server now on port ${PORT}!`);
+});
