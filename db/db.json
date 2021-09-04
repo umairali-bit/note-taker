@@ -1,13 +1,10 @@
-{
-"notes": [
-    
+[
     {
         "title":"Test Title",
         "text":"Test text",
         "id":"4500"
     }
 ]
-}
 
 // add an id
 // each note should shave titel, text and id's
