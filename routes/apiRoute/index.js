@@ -9,7 +9,7 @@ const allNotes = require('../../db/db.json');
 // Installed express-router
 const router = require('express').Router();
 
-// Funtion to create a new note
+// Function to create a new note
 // =============================================================
 
 function createNewNote(body, notesArray) {
@@ -31,7 +31,7 @@ function createNewNote(body, notesArray) {
     return newNote;
 }
 
-// Funtion to delete a note
+// Function to delete a note
 // ================================================================
 
 function deleteNote(id, notesArray) {
