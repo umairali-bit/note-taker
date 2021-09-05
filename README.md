@@ -33,8 +33,9 @@ THEN a Save icon appears in the navigation at the top of the page <br> <br>
 
 # Heroku
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://pacific-escarpment-73828.herokuapp.com/)
-
-
+<br><br><br>
+# Images
+[To view the images for this app click here](https://github.com/umairali-bit/note-taker/tree/main/imgs)
 
 
 
